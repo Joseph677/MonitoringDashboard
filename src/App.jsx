@@ -3,7 +3,7 @@ import './App.css'
 import Data from './database.json'
 
 function App() {
-  const data = useState(Data)
+  const [data, setData] = useState(Data)
 
   return (
     <>
@@ -17,19 +17,19 @@ function App() {
         </thead>
         <tbody>
         <tr>
-          <td>{data[0][0].cameraID}</td>
-          <td>{data[0][0].mergeID}</td>
-          <td>{data[0][0].carCount}</td>
+          <td>{data[0].cameraID}</td>
+          <td>{data[0].mergeID}</td>
+          <td>{data[0].carCount}</td>
         </tr>
         <tr>
-          <td>{data[0][1].cameraID}</td>
-          <td>{data[0][1].mergeID}</td>
-          <td>{data[0][1].carCount}</td>
+          <td>{data[1].cameraID}</td>
+          <td>{data[1].mergeID}</td>
+          <td>{data[1].carCount}</td>
         </tr>
         <tr>
-          <td>{data[0][2].cameraID}</td>
-          <td>{data[0][2].mergeID}</td>
-          <td>{data[0][2].carCount}</td>
+          <td>{data[2].cameraID}</td>
+          <td>{data[2].mergeID}</td>
+          <td>{data[2].carCount}</td>
         </tr>
         </tbody>
       </table>
